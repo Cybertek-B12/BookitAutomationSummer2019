@@ -71,6 +71,7 @@
                     <includes>
                         <include>**/*Runner.java</include>
                     </includes>
+<!--                    rerun failed tests-->
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
                     <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
