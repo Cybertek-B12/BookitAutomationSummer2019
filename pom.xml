@@ -51,6 +51,7 @@
         </dependency>
 
     </dependencies>
+
     <build>
         <!--        http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html-->
         <plugins>
@@ -86,7 +87,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Cucumber HTML Reports</projectName>
+                            <projectName>Bookit Automation</projectName>
                             <outputDirectory>${project.build.directory}</outputDirectory>
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
@@ -98,4 +99,6 @@
             </plugin>
         </plugins>
     </build>
+
+
 </project>
