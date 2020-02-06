@@ -1,4 +1,4 @@
-package com.bookit.step_defintions;
+package com.bookit.step_definitions;
 
 import io.restassured.response.Response;
 
