@@ -11,7 +11,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.*;
 
 public class APIUtilities {
-    private static String URI = ConfigurationReader.getProperty("bookit.api."+ConfigurationReader.getProperty("environment"));
+    private static String URI = Environment.BASE_URI;
 
     /**
      * Method that generates access token
