@@ -72,6 +72,12 @@ public class APIStepDefinitions {
                                 post(path);
 
             response.then().log().body(true);
+
         }
+    }
+
+    @Then("user deletes previously added students")
+    public void user_deletes_previously_added_students(List<Map<String, String>> students) {
+
     }
 }
