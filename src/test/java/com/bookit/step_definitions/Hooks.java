@@ -1,7 +1,7 @@
 package com.bookit.step_definitions;
 
 import com.bookit.utilities.Environment;
-import io.cucumber.java.Before;
+import io.cucumber.java.*;
 import static io.restassured.RestAssured.*;
 
 public class Hooks {
