@@ -4,12 +4,14 @@ import com.bookit.utilities.APIUtilities;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class APIStepDefinitions {
     private Response response;
     private String token;
-
+    private JsonPath jsonPath;
+    private String contentType;
 
     @Given("authorization token is provided for {string}")
     public void authorization_token_is_provided_for(String role) {
