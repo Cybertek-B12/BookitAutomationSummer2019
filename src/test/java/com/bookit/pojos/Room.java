@@ -25,6 +25,9 @@ public class Room {
     }
 
     //to check if 2 room objects are equals
+    //otherwise, default equals method will be used
+    //and it check only if 2 variables
+    //point on the same object in the memory (heap)
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
