@@ -112,6 +112,20 @@ public class APIStepDefinitions {
         Assert.assertTrue(actualRoomNames.containsAll(dataTable));
     }
 
+    @When("user sends DELETE request to {string} to exclude student")
+    public void user_sends_DELETE_request_to_to_exclude_student(String string) {
+        response = given().
+                accept(contentType).auth().oauth2(token).
+                when().
+                delete(string);
+    }
+
+    @When("user verifies that status line contains {string}")
+    public void user_verifies_that_status_line_contains(String string) {
+        Assert.assertTrue(response.statusLine().contains(string));
+    }
+
+
     @Then("user deletes previously added students")
     public void user_deletes_previously_added_students(List<Map<String, String>> students) {
 

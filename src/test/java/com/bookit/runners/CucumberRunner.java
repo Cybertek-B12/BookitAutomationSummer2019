@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/bookit/step_definitions",
-        dryRun = false,
-        tags = " @verify_room_names"
+        dryRun = true,
+        tags = "@delete_student"
 )
 public class CucumberRunner {
 }
