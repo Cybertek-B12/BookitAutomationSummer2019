@@ -12,7 +12,7 @@ import java.util.Objects;
  *         "withWhiteBoard": false
  *     },
  */
-public class Room {
+public class Room implements Comparable<Room>{
     private int id;
     private String name;
     private String description;
@@ -109,5 +109,10 @@ public class Room {
                 ", withTV=" + withTV +
                 ", withWhiteBoard=" + withWhiteBoard +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Room o) {
+        return this.name.compareTo(o.getName());
     }
 }
