@@ -117,10 +117,8 @@ public class APIStepDefinitions {
         response = given().
                 accept(contentType).auth().oauth2(token).
                 when().
-                delete(string);
+                delete(string).prettyPeek();
     }
-
-    // break till 2pm.
 
     @When("user verifies that status line contains {string}")
     public void user_verifies_that_status_line_contains(String string) {
