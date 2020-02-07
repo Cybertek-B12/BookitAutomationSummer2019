@@ -106,7 +106,9 @@ public class APIStepDefinitions {
 
     @Then("user payload contains following room names:")
     public void user_payload_contains_following_room_names(List<String> dataTable) {
+
         List<String> actualRoomNames = response.jsonPath().getList("name");
+
         Assert.assertTrue(actualRoomNames.containsAll(dataTable));
     }
 
