@@ -57,6 +57,29 @@ public class APIUtilities {
 
 
     /**
+     * Delete user based on email and password
+     * @param email
+     * @param password
+     * @return response
+     */
+    public static Response deleteMe(String email, String password) {
+        String token = given().
+                queryParam("email", email).
+                queryParam("password", password).
+                when().
+                get("/sign").prettyPeek().jsonPath().getString("accessToken");
+
+        int userToDelete = given().auth().oauth2(token).
+                when().
+                get("/api/users/me").jsonPath().getInt("id");
+
+        Response response = given().auth().oauth2(getToken("teacher")).delete(Endpoints.DELETE_STUDENT, userToDelete);
+        response.prettyPeek();
+        return response;
+    }
+
+
+    /**
      * Method to find duplicates in the list of objects. Override equals method for your custom class and provide strategy of equality.
      *
      * @param list of objects to search for duplicates
