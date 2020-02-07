@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/bookit/step_definitions",
         dryRun = true,
-        tags = "@api and @create_student"
+        tags = "@print_room_names"
 )
 public class CucumberRunner {
 }

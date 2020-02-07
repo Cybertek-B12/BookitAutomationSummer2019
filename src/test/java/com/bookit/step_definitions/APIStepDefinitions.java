@@ -76,6 +76,12 @@ public class APIStepDefinitions {
         }
     }
 
+    @Then("user should be able to see all room names")
+    public void user_should_be_able_to_see_all_room_names() {
+
+    }
+
+
     @Then("user deletes previously added students")
     public void user_deletes_previously_added_students(List<Map<String, String>> students) {
 
