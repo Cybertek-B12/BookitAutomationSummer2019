@@ -1,3 +1,4 @@
+@delete_student
 Feature: Delete student
 
   Scenario Outline: 1. Delete student as <role> and verify status code 403 (negative)
