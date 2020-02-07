@@ -32,7 +32,7 @@ Feature: Rooms
       | kilimanjaro |
       | half dome   |
       | denali      |
-      | meruv       |
+      | meru        |
       | google      |
       | apple       |
       | microsoft   |

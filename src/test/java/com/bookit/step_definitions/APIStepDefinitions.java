@@ -94,12 +94,12 @@ public class APIStepDefinitions {
         System.out.println("#########AFTER SORTING##########");
         //create new list to overcome the issue with Unmodifiable list
         List<Room> rooms2 = new ArrayList<>(rooms);
+
         Collections.sort(rooms2);
 
         for (Room room: rooms2){
             System.out.println(room.getName());
         }
-        //break till 11:13
     }
 
 
